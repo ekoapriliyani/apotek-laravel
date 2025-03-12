@@ -9,10 +9,5 @@ class Supplier extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nama_supplier', 'kontak', 'alamat'];
-
-    public function obats()
-    {
-        return $this->hasMany(Obat::class);
-    }
+    protected $fillable = ['nama_supplier', 'alamat', 'telepon'];
 }
